@@ -10,3 +10,7 @@ app.get("/hello", (req, res) => {
 app.listen(PORT, () => {
   console.log("Server is running on PORT", PORT);
 });
+app.get("/", (req, res) => {
+    res.send("Welcome to my Express app on Render!");
+  });
+  
